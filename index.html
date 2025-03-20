@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Era | Product Recommendation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Shop-Era Product Recommendation</h1>
+    </header>
+
+    <main>
+        <!-- Budget Input -->
+        <section id="budget-section">
+            <h2>Enter Your Budget</h2>
+            <input type="number" id="budget" placeholder="Enter budget amount">
+            <button onclick="getRecommendations()">Get Recommendations</button>
+        </section>
+
+        <!-- Product List -->
+        <section id="product-list">
+            <h2>Available Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price ($)</th>
+                        <th>Satisfaction</th>
+                    </tr>
+                </thead>
+                <tbody id="products-table">
+                    <!-- Product rows will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Recommended Products -->
+        <section id="recommended-products">
+            <h2>Recommended Products</h2>
+            <ul id="recommendation-list">
+                <!-- Recommended products will appear here -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
